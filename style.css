@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Oswald";
+}
+
+/**************************************************/
+                /* --- HOME --- */
+/**************************************************/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 30px;
+    padding-bottom: 100px;
+    
+}
+
+#home img{
+    height: 150px;
+    width: 200px;
+}
+
+#home .h1s{
+    font-size: 40px;
+    margin: 0 0 0 0;
+
+}
+#home p{
+    margin: 10px 0 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#home video{
+    height: 450px;
+    border: solid 1px blue; 
+    box-shadow: 0 25px 50px 0px;
+    z-index: 1;
+}
+
+#home button {
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: 15px solid black;
+    border-radius: 35px;
+    padding: 12px;
+    margin-top: 55px;
+    flex-basis: 40px;
+    width: 700px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+#home button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    
+}
+
+/**************************************************/
+                /* --- VANTAGENS --- */
+/**************************************************/
+
+#vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 55px;
+}
+
+
+.icons {
+    display: flex;
+}
+
+.icons div{
+    width: 200px;
+    margin: 55px 99px;
+}
+
+.headings3{
+    text-align: center;
+    margin-top: 12px;
+    font-size: 25px;
+}
+
+.icons img{
+    height: 200px;
+}
+
+.icons p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/**************************************************/
+                /* --- INFO --- */
+/**************************************************/
+
+#info{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 55px;
+}
+
+.heading-info {
+    text-align: center;
+    margin-bottom: 90px;
+    font-size: 1.9rem;
+}
+
+.heading-info p{
+    position: relative;
+    bottom: 30px;
+}
+
+.sublinhado {
+    color: blue;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#info div i{
+    font-size: 30px;
+    margin: 9px;
+}
+
+/**************************************************/
+                /* --- CERTIFICADO --- */
+/**************************************************/
+
+#certificado {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px 55px;
+
+}
+
+#certificado img{
+    box-shadow: 0 25px 50px 0px;
+    width: 700px;
+    float: left;
+}
+
+.desc-certificado{
+    width: 600px;
+    margin-right: 70px; 
+}
+
+
+#certificado h2 {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    font-size: 2.1rem;
+    color: black;
+    box-shadow: 0 12px 24px 0px;
+    animation: placapisca 0.3s infinite;
+
+}
+
+@keyframes placapisca{
+    50% {color: blue;};
+}
+
+#certificado p {
+    margin-left: 50px;
+    margin-top: 45px;
+    font-size: 1.7rem;
+}
+
+
+/**************************************************/
+                /* --- FEEDBACK --- */
+/**************************************************/
+
+#feedback {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.feedback-imgs{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 99px;
+    row-gap: 50px;
+}
+
+.feedback-imgs img {
+    box-shadow: 0 5px 9px 0px;
+    border-radius: 25px 0 25px 0;
+}
+
+
+.text-feedback h2{
+    position: relative;
+    bottom: 50px;
+    font-size: 2.5rem;
+}
+
+
+
+.text-feedback i{
+    transform: rotate(90deg);
+    padding-bottom: 50px;
+
+    font-size: 50px;
+}
+
+
+/**************************************************/
+                /* --- VALOR --- */
+/**************************************************/
+
+#valor {
+    margin: 60px 0;
+    display: grid;
+    grid-template-rows: (4, 1fr);
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#valor h1 {
+    font-size: 3.5rem;
+    
+}
+
+.tempo{
+    animation: timetime 0.5s infinite;
+}
+
+@keyframes timetime {
+    50% {color: blue;};
+
+    
+}
+
+#valor h2{
+    font-size: 3.5rem;
+}
+
+#valor p{
+    font-size: 1.5rem;
+
+}
+
+#valor button{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    font-size: 35px;
+    border-bottom: 15px solid black;
+    border-radius: 35px;
+    padding: 12px;
+    margin-top: 55px;
+    flex-basis: 40px;
+    width: 600px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+#valor button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+}
+
+/**************************************************/
+                /* --- DÚVIDAS --- */
+/**************************************************/
+
+#duvidas{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: (6,1fr);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#duvidas h1{
+    margin-top: 50px;
+    font-size: 1.9rem;
+}
+
+
+.child-duvidas {
+    margin: 50px 0;
+}
+
+#duvidas details{
+    font-size: 1.3rem;
+    margin: 35px 0;
+    text-align: center;
+
+}
+
+#duvidas summary{
+    color: rgb(221, 221, 221);
+    padding: 12px 0;
+    width: 900px;
+    background: rgb(59, 59, 59);
+}
+    
+
+/**************************************************/
+                /* --- RODAPE --- */
+/**************************************************/
+
+#rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+#rodape p a{
+    text-decoration: none;
+    animation: gabriel 0.9s infinite;
+}
+
+@keyframes gabriel {
+
+    30% {color: skyblue;};
+
+}
+
+#rodape i{
+    font-size: 35px;
+    position: absolute;
+    right: 350px;
+
+}
